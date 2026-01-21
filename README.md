@@ -44,7 +44,7 @@ Responsive Design - Mobile-first approach
 👤 Author
 Your Name
 
-GitHub:Sunilkr1
+GitHub:https://github.com/Sunilkr1/
 
 LinkedIn: https://www.linkedin.com/in/sunil-kumar27/
 

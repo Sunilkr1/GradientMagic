@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient Generator | Create Beautiful Gradients</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <i class="fas fa-palette"></i>
+          <span>GradientGen</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-star"></i> Features</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-question-circle"></i> About</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+        <button class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <header class="hero">
+          <h1><i class="fas fa-magic"></i> Gradient Generator</h1>
+          <p class="subtitle">
+            Create beautiful gradient backgrounds with a single click. Copy the
+            CSS code for your projects.
+          </p>
+        </header>
+
+        <section class="gradient-preview">
+          <div class="gradient-display" id="gradientDisplay"></div>
+          <div class="gradient-controls">
+            <h2><i class="fas fa-sliders-h"></i> Gradient Controls</h2>
+            <div class="button-group">
+              <button id="myButton" class="color-btn">
+                <span class="color-label">Left Color</span>
+                <span class="color-value">#051937</span>
+                <i class="fas fa-sync-alt"></i>
+              </button>
+              <button id="myButton2" class="color-btn">
+                <span class="color-label">Right Color</span>
+                <span class="color-value">#008793</span>
+                <i class="fas fa-sync-alt"></i>
+              </button>
+            </div>
+
+            <div class="direction-controls">
+              <h3><i class="fas fa-compass"></i> Direction</h3>
+              <div class="direction-buttons">
+                <button class="dir-btn active" data-direction="to right">
+                  <i class="fas fa-arrow-right"></i> Right
+                </button>
+                <button class="dir-btn" data-direction="to left">
+                  <i class="fas fa-arrow-left"></i> Left
+                </button>
+                <button class="dir-btn" data-direction="to bottom">
+                  <i class="fas fa-arrow-down"></i> Bottom
+                </button>
+                <button class="dir-btn" data-direction="to top">
+                  <i class="fas fa-arrow-up"></i> Top
+                </button>
+                <button class="dir-btn" data-direction="to bottom right">
+                  <i class="fas fa-arrow-down-right"></i> Diagonal
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="code-section">
+          <h2><i class="fas fa-code"></i> CSS Code</h2>
+          <p class="section-subtitle">
+            Click the code below to copy it to your clipboard
+          </p>
+          <div class="copycode">
+            <div class="code-header">
+              <span>CSS Gradient Code</span>
+              <button class="copy-btn"><i class="far fa-copy"></i> Copy</button>
+            </div>
+            <div class="code-content">
+              background-image: linear-gradient(to right, #051937, #008793);
+            </div>
+          </div>
+          <p class="copy-hint">
+            <i class="fas fa-info-circle"></i> Code copied to clipboard!
+          </p>
+        </section>
+
+        <section class="features">
+          <h2><i class="fas fa-cogs"></i> Features</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <i class="fas fa-random"></i>
+              <h3>Random Colors</h3>
+              <p>Generate random beautiful gradient colors with one click.</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-copy"></i>
+              <h3>Easy Copy</h3>
+              <p>
+                Copy CSS code instantly with a single click for your projects.
+              </p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-mobile-alt"></i>
+              <h3>Responsive</h3>
+              <p>Works perfectly on all devices from mobile to desktop.</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-paint-brush"></i>
+              <h3>Customizable</h3>
+              <p>Control gradient direction and colors for your needs.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3><i class="fas fa-palette"></i> GradientGen</h3>
+            <p>
+              Create beautiful gradient backgrounds for your web projects. Free
+              and easy to use.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-codepen"></i></a>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Home</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-chevron-right"></i> Gallery</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Documentation</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-right"></i> Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <ul>
+              <li><i class="fas fa-envelope"></i>sunilkr87800@gmail.com</li>
+              <li><i class="fas fa-map-marker-alt"></i>Bhopal</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="currentYear"></span> Gradient Generator. All rights
+            reserved.
+          </p>
+          <p>Made with <i class="fas fa-heart"></i> Sunil Developers</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
